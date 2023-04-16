@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h2>Request a Call Back</h2>
+        <p>Enter your details and the school you wish to be contacted by, and we'll try to get back to you at your preferred date/time</p>
+        <form id="callback_form" target="_blank" method="POST">
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name"><br>
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name"><br>
+            <label for="phone">Telephone number (Include area code):</label>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="email">Email address:</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="best_time">Preferred Date and Time to be Contacted:</label>
+            <input type="datetime-local" id="best_time" name="best_time"><br>
+            <label for="school">Select a school you wish to be contacted by:</label>
+            <select id="school" name="school">
+                <option value="sport_and_health">School of Sport and Health Science</option>
+                <option value="management">School of Management</option>
+                <option value="technology">School of Technology</option>
+                <option value="education_and_social_policy">School of Education and Social Policy</option>
+                <option value="art_and_design"">School of Art and Design</option>
+            </select><br>
+            <input type="submit" value="Submit" name="submitCallbackForm">
+        </form>
+    </body>
+</html>
